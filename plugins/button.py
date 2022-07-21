@@ -178,6 +178,21 @@ def start_button(client):
             [InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close")],
         ]
         return buttons
+     if FORCE_SUB_CHANNEL and FORCE_SUB_CHANNEL1 and FORCE_SUB_CHANNEL2 and not FORCE_SUB_GROUP:
+        buttons = [
+            [
+                InlineKeyboardButton(text="• ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ •", callback_data="about"),
+            ],
+            [
+                InlineKeyboardButton(text="• ᴊᴏɪɴ 1 •", url=client.invitelink),
+            ],
+            [
+                InlineKeyboardButton(text="• ᴊᴏɪɴ 2 •", url=client.invitelink1),
+                InlineKeyboardButton(text="• ᴊᴏɪɴ 3 •", url=client.invitelink4),
+            ],
+            [InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close")],
+        ]
+        return buttons
     if FORCE_SUB_CHANNEL and FORCE_SUB_CHANNEL1 and FORCE_SUB_CHANNEL2 and FORCE_SUB_GROUP:
         buttons = [
             [
@@ -186,21 +201,6 @@ def start_button(client):
             [
                 InlineKeyboardButton(text="• ᴊᴏɪɴ 1 •", url=client.invitelink),
                 InlineKeyboardButton(text="• ᴊᴏɪɴ 2 •", url=client.invitelink2),
-            ],
-            [
-                InlineKeyboardButton(text="• ᴊᴏɪɴ 3 •", url=client.invitelink1),
-                InlineKeyboardButton(text="• ᴊᴏɪɴ 4 •", url=client.invitelink4),
-            ],
-            [InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close")],
-        ]
-        return buttons
-    if FORCE_SUB_CHANNEL and FORCE_SUB_CHANNEL1 and FORCE_SUB_CHANNEL2 and not FORCE_SUB_GROUP:
-        buttons = [
-            [
-                InlineKeyboardButton(text="• ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ •", callback_data="about"),
-            ],
-            [
-                InlineKeyboardButton(text="• ᴊᴏɪɴ 1 •", url=client.invitelink),
             ],
             [
                 InlineKeyboardButton(text="• ᴊᴏɪɴ 3 •", url=client.invitelink1),
